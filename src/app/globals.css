@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Playfair+Display:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --gold: #f59e0b;
+  --gold-light: #fcd34d;
+  --gold-dark: #b45309;
+  --emerald: #059669;
+  --emerald-light: #34d399;
+  --emerald-dark: #064e3b;
+  --cream: #fffbeb;
+  --font-display: 'Playfair Display', serif;
+  --font-body: 'DM Sans', sans-serif;
+  --font-arabic: 'Amiri', serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: #fafafa;
+  color: #1a1a1a;
+}
+
+/* Islamic geometric background pattern */
+.geometric-bg {
+  background-color: var(--emerald-dark);
+  background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23f59e0b' fill-opacity='0.06'%3E%3Cpath d='M40 0L80 40L40 80L0 40zM40 10L70 40L40 70L10 40z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.geometric-light {
+  background-color: #fffbeb;
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23059669' fill-opacity='0.05'%3E%3Cpath d='M30 0L60 30L30 60L0 30zM30 8L52 30L30 52L8 30z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Arabic calligraphy text */
+.arabic-text {
+  font-family: var(--font-arabic);
+  direction: rtl;
+}
+
+/* Gold shimmer effect */
+.gold-shimmer {
+  background: linear-gradient(
+    90deg,
+    var(--gold-dark) 0%,
+    var(--gold) 50%,
+    var(--gold-dark) 100%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 3s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* Scroll animations */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--emerald);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--emerald-dark);
+}
+
+/* Focus styles */
+:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+
+/* Prose styles for blog content */
+.prose-islamic h2 {
+  font-family: var(--font-display);
+  color: var(--emerald-dark);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 2rem 0 1rem;
+}
+
+.prose-islamic p {
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  color: #374151;
+}
+
+.prose-islamic blockquote {
+  border-left: 4px solid var(--gold);
+  padding-left: 1rem;
+  font-style: italic;
+  color: var(--emerald-dark);
+  font-family: var(--font-arabic);
+  font-size: 1.1rem;
+}
+
+/* Badge styles */
+.badge-gold {
+  background: linear-gradient(135deg, #fde68a, #f59e0b);
+  color: #78350f;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.badge-emerald {
+  background: linear-gradient(135deg, #a7f3d0, #059669);
+  color: #064e3b;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* Card hover effects */
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(5, 150, 105, 0.15);
+}
+
+/* Islamic ornament divider */
+.ornament-divider {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--gold);
+}
+
+.ornament-divider::before,
+.ornament-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--gold), transparent);
+}
+
+/* Priority indicators */
+.priority-urgent {
+  background-color: #fee2e2;
+  border-left: 4px solid #dc2626;
+}
+
+.priority-important {
+  background-color: #fef3c7;
+  border-left: 4px solid var(--gold);
+}
+
+.priority-normal {
+  background-color: #d1fae5;
+  border-left: 4px solid var(--emerald);
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-gradient-to-r from-emerald-600 to-emerald-700 text-white font-semibold px-6 py-3 rounded-xl hover:from-emerald-700 hover:to-emerald-800 transition-all duration-200 shadow-lg hover:shadow-emerald-200 hover:-translate-y-0.5 active:translate-y-0;
+  }
+
+  .btn-gold {
+    @apply bg-gradient-to-r from-gold-400 to-gold-500 text-emerald-900 font-semibold px-6 py-3 rounded-xl hover:from-gold-500 hover:to-gold-600 transition-all duration-200 shadow-lg hover:shadow-gold-200 hover:-translate-y-0.5 active:translate-y-0;
+  }
+
+  .btn-outline {
+    @apply border-2 border-emerald-600 text-emerald-700 font-semibold px-6 py-3 rounded-xl hover:bg-emerald-600 hover:text-white transition-all duration-200;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-emerald-500 focus:outline-none transition-colors duration-200 bg-white text-gray-800 placeholder:text-gray-400;
+  }
+
+  .label-field {
+    @apply block text-sm font-semibold text-gray-700 mb-1.5;
+  }
+
+  .card {
+    @apply bg-white rounded-2xl shadow-sm border border-gray-100 p-6;
+  }
+
+  .section-title {
+    @apply font-display text-3xl md:text-4xl font-bold text-emerald-900;
+  }
+
+  .section-subtitle {
+    @apply text-gray-600 text-lg max-w-2xl mx-auto;
+  }
+}
