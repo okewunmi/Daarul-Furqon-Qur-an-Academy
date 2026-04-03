@@ -13,7 +13,7 @@ export default async function BlogPage() {
     .eq('status', 'published')
     .order('published_at', { ascending: false })
 
-  const categories = ['all', ...new Set((posts || []).map(p => p.category))]
+  const categories = ['all', ...Array.from(new Set((posts || []).map(p => p.category)))]
 
   return (
     <div className="pt-24 pb-16 min-h-screen">
