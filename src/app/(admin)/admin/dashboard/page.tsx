@@ -79,7 +79,7 @@ export default function AdminDashboard() {
         {[
           { href: '/admin/students/new', icon: UserPlus, label: 'Create Student Login', desc: 'Set up login credentials for a new student', color: 'bg-emerald-600' },
           { href: '/admin/sessions/new', icon: Calendar, label: 'Schedule a Session', desc: 'Add a new class with a Google Meet link', color: 'bg-blue-600' },
-          { href: '/admin/announcements/new', icon: Bell, label: 'Post Announcement', desc: 'Send a message to all or specific groups', color: 'bg-gold-500' },
+          { href: '/admin/announcements/', icon: Bell, label: 'Post Announcement', desc: 'Send a message to all or specific groups', color: 'bg-gold-500' },
         ].map(({ href, icon: Icon, label, desc, color }) => (
           <Link
             key={href}
