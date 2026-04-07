@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { BookOpen, MessageCircle, Lock } from 'lucide-react'
 
-const ADMIN_WHATSAPP = '+2347076107558'
+const ADMIN_WHATSAPP = '+2348148168900'
 
 export default function SuspendedPage() {
   const waMessage = encodeURIComponent(

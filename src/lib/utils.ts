@@ -42,7 +42,7 @@ export function getWhatsAppLink(phone: string, message: string): string {
   return `https://wa.me/${clean}?text=${encodeURIComponent(message)}`
 }
 
-export const ADMIN_WHATSAPP = '+2347076107558'
+export const ADMIN_WHATSAPP = '+2348148168900'
 
 export function getPaymentWhatsAppMessage(name: string, program: string, plan: string): string {
   return `Assalamu Alaykum! I'm ${name}. I've registered for the ${program} program (${plan} payment plan) at Daarul Furqon Qur'an Academy. Please find my proof of payment attached. JazakAllahu Khayran.`
