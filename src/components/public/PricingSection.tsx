@@ -126,7 +126,7 @@ export default function PricingSection() {
               <strong className="text-gold-700">Payment Process:</strong> After registering, send your proof of payment to our admin via WhatsApp.
               Your login details will be created within 24 hours.{' '}
               <a
-                href="https://wa.me/2347076107558"
+                href="https://wa.me/2348148168900"
                 className="text-emerald-700 font-semibold underline hover:text-gold-600"
                 target="_blank"
                 rel="noopener noreferrer"
