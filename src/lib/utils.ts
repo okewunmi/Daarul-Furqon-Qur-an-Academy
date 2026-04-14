@@ -45,5 +45,5 @@ export function getWhatsAppLink(phone: string, message: string): string {
 export const ADMIN_WHATSAPP = '+2348148168900'
 
 export function getPaymentWhatsAppMessage(name: string, program: string, plan: string): string {
-  return `Assalamu Alaykum! I'm ${name}. I've registered for the ${program} program (${plan} payment plan) at Daarul Furqon Qur'an Academy. Please find my proof of payment attached. JazakAllahu Khayran.`
+  return `Assalamu Alaykum! I'm ${name}. I've registered for the ${program} program (${plan} payment plan) at Dārul Furqōn Academy. Please find my proof of payment attached. JazakAllahu Khayran.`
 }

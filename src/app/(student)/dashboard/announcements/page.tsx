@@ -60,7 +60,7 @@ export default function AnnouncementsPage() {
     <div className="max-w-3xl space-y-6">
       <div>
         <h1 className="font-display text-3xl font-bold text-emerald-900">Announcements</h1>
-        <p className="text-gray-500 mt-1">Important updates from Daarul Furqon Academy.</p>
+        <p className="text-gray-500 mt-1">Important updates from Dārul Furqōn Academy.</p>
       </div>
 
       {loading ? (

@@ -2,11 +2,11 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: "Daarul Furqon Qur'an Academy | Online Islamic Institute",
+  title: "Dārul Furqōn Academy | Online Islamic Institute",
   description: "Learn the Qur'an online from anywhere. Structured programs for all levels — Foundation, Fluency, Hifz, Islamic Studies & Advanced Reflection. Live classes, flexible timing, certified teachers.",
   keywords: "Quran online, Islamic studies, Hifz, Tajweed, online academy, Nigeria, diaspora",
   openGraph: {
-    title: "Daarul Furqon Qur'an Academy",
+    title: "Dārul Furqōn Academy",
     description: "From Tilāwah to Hidayah — a complete journey through the Qur'an.",
     type: 'website',
   },

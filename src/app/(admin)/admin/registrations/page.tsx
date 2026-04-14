@@ -114,7 +114,7 @@ export default function AdminRegistrationsPage() {
                     </>
                   )}
                   <a
-                    href={`https://wa.me/${reg.phone.replace(/\D/g, '')}?text=${encodeURIComponent(`Assalamu Alaykum ${reg.full_name}! We've received your registration for the ${PROGRAM_LABELS[reg.program] || reg.program} program at Daarul Furqon Qur'an Academy.`)}`}
+                    href={`https://wa.me/${reg.phone.replace(/\D/g, '')}?text=${encodeURIComponent(`Assalamu Alaykum ${reg.full_name}! We've received your registration for the ${PROGRAM_LABELS[reg.program] || reg.program} program at Dārul Furqōn Academy.`)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-1.5 text-xs font-medium text-emerald-600 border border-emerald-200 px-3 py-2 rounded-xl hover:bg-emerald-50"

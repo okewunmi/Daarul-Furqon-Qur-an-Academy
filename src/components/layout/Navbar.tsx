@@ -39,8 +39,8 @@ export default function Navbar() {
               <BookOpen className="w-5 h-5 text-emerald-900" />
             </div>
             <div>
-              <div className="text-white font-display font-bold text-sm leading-tight">Daarul Furqon</div>
-              <div className="text-gold-300 text-xs leading-tight">Qur'an Academy</div>
+              <div className="text-white font-display font-bold text-sm leading-tight">Dārul Furqōn</div>
+              <div className="text-gold-300 text-xs leading-tight"> Academy</div>
             </div>
           </Link>
 

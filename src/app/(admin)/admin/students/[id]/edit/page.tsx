@@ -149,7 +149,7 @@ export default function EditStudentPage() {
       return
     }
     const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://quran-academy-online.netlify.app'
-    const text = `Assalamu Alaykum ${form.full_name}! 🌙\n\nHere are your updated Daarul Furqon login credentials:\n\n📧 Email: ${profile.email}\n🔑 Password: ${newPassword}\n🔗 Login: ${siteUrl}/login\n\nJazakAllahu Khayran! 📖`
+    const text = `Assalamu Alaykum ${form.full_name}! 🌙\n\nHere are your updated Dārul Furqōn login credentials:\n\n📧 Email: ${profile.email}\n🔑 Password: ${newPassword}\n🔗 Login: ${siteUrl}/login\n\nJazakAllahu Khayran! 📖`
     const phone = (profile.phone || form.phone || '').replace(/\D/g, '')
     window.open(`https://wa.me/${phone}?text=${encodeURIComponent(text)}`, '_blank')
   }

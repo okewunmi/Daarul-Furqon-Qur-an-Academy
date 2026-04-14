@@ -104,7 +104,7 @@ export default function NewStudentPage() {
   // ── Success screen ──────────────────────────────────────────
   if (success && createdCreds && registration) {
     const siteUrl =  'https://quran-academy-online.netlify.app'
-    const waText = `Assalamu Alaykum ${registration.full_name}! 🌙\n\nYour Daarul Furqon Qur'an Academy student account has been created.\n\n📧 Login Email: ${createdCreds.email}\n🔑 Password: ${createdCreds.password}\n🔗 Login here: ${siteUrl}/login\n\nPlease change your password after your first login.\n\nJazakAllahu Khayran! 📖`
+    const waText = `Assalamu Alaykum ${registration.full_name}! 🌙\n\nYour Dārul Furqōn Academy student account has been created.\n\n📧 Login Email: ${createdCreds.email}\n🔑 Password: ${createdCreds.password}\n🔗 Login here: ${siteUrl}/login\n\nPlease change your password after your first login.\n\nJazakAllahu Khayran! 📖`
 
     return (
       <div className="max-w-lg mx-auto">

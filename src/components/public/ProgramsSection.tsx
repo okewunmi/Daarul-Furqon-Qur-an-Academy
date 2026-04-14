@@ -28,8 +28,15 @@ export default function ProgramsSection() {
         <div ref={el => addRef(el as HTMLElement)} className="reveal text-center mb-16">
           <span className="badge-emerald mb-4 inline-block">Our Curriculum</span>
           <h2 className="section-title mb-4">
-            Five Paths to <span className="text-gold-600">Qur'anic Mastery</span>
+            Three Paths to <span className="text-gold-600">Qur'anic Mastery</span>
           </h2>
+          
+          <h2 className="section-title mb-4">
+            Five Paths to <span className="text-gold-600">Islamic Identity</span>
+          </h2>
+          {/* <h2 className="section-title mb-4">
+            Five Paths to <span className="text-gold-600">Qur'anic Mastery</span>
+          </h2> */}
           <p className="section-subtitle mx-auto">
             Each program is a structured 4-month cycle designed for measurable progress,
             guided by qualified instructors in live online classes.

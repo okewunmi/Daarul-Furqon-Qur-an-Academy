@@ -52,7 +52,7 @@ export default function RegistrationDetailPage() {
   const selectedPlan = PAYMENT_PLANS.find(p => p.id === reg?.payment_plan)
 
   const waMessage = reg
-    ? `Assalamu Alaykum ${reg.full_name}! We have received your registration for the ${PROGRAM_LABELS[reg.program] || reg.program} program at Daarul Furqon Qur'an Academy. Please confirm your payment so we can activate your account. JazakAllahu Khayran.`
+    ? `Assalamu Alaykum ${reg.full_name}! We have received your registration for the ${PROGRAM_LABELS[reg.program] || reg.program} program at Dārul Furqōn Academy. Please confirm your payment so we can activate your account. JazakAllahu Khayran.`
     : ''
 
   if (loading) {

@@ -25,8 +25,9 @@ export default function Footer() {
                 <BookOpen className="w-5 h-5 text-emerald-900" />
               </div>
               <div>
-                <div className="text-white font-display font-bold">Daarul Furqon</div>
-                <div className="text-gold-400 text-xs">Qur'an Academy</div>
+                <div className="text-white font-display font-bold">Dārul Furqōn</div>
+                {/* <div className="text-white font-display font-bold">Daarul Furqon</div> */}
+                <div className="text-gold-400 text-xs">Academy</div>
               </div>
             </div>
             <p className="text-emerald-300 text-sm leading-relaxed max-w-sm">
@@ -61,7 +62,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Contact */}
+          {/* Contact
           <div>
             <h3 className="text-white font-semibold mb-4">Contact Us</h3>
             <ul className="space-y-3 text-sm">
@@ -84,11 +85,41 @@ export default function Footer() {
                 Enroll Today
               </Link>
             </div>
+          </div> */}
+          {/* Contact */}
+          <div>
+            <h3 className="text-white font-semibold mb-4">Contact Us</h3>
+            <ul className="space-y-3 text-sm">
+              <li className="flex items-start gap-2 text-emerald-300">
+                <Phone className="w-4 h-4 mt-0.5 text-gold-400 shrink-0" />
+                <a href="https://wa.me/2348148168900" className="hover:text-gold-400 transition-colors">
+                  +2348148168900
+                </a>
+              </li>
+              <li className="flex items-start gap-2 text-emerald-300">
+                <Mail className="w-4 h-4 mt-0.5 text-gold-400 shrink-0" />
+                <a href="mailto:darulfurqonacademy@gmail.com" className="hover:text-gold-400 transition-colors">
+                  darulfurqonacademy@gmail.com
+                </a>
+              </li>
+              <li className="flex items-start gap-2 text-emerald-300">
+                <MapPin className="w-4 h-4 mt-0.5 text-gold-400 shrink-0" />
+                <span>Online — Worldwide</span>
+              </li>
+            </ul>
+            <div className="mt-6">
+              <Link
+                href="/register"
+                className="inline-block bg-gradient-to-r from-gold-400 to-gold-500 text-emerald-900 font-semibold text-sm px-5 py-2.5 rounded-xl hover:from-gold-500 hover:to-gold-600 transition-all"
+              >
+                Enroll Today
+              </Link>
+            </div>
           </div>
         </div>
 
         <div className="border-t border-emerald-800/50 mt-10 pt-6 flex flex-col md:flex-row items-center justify-between gap-3 text-sm text-emerald-500">
-          <p>© {currentYear} Daarul Furqon Qur'an Academy. All rights reserved.</p>
+          <p>© {currentYear} Dārul Furqōn Academy. All rights reserved.</p>
           <p className="flex items-center gap-1">
             Made with <Heart className="w-3.5 h-3.5 text-gold-500 fill-gold-500" /> for the Ummah
           </p>

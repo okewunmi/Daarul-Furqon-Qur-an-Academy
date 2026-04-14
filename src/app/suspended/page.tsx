@@ -5,7 +5,7 @@ const ADMIN_WHATSAPP = '+2348148168900'
 
 export default function SuspendedPage() {
   const waMessage = encodeURIComponent(
-    "Assalamu Alaykum! My student account at Daarul Furqon Qur'an Academy has been suspended. I would like to resolve this and regain access. JazakAllahu Khayran."
+    "Assalamu Alaykum! My student account at Dārul Furqōn has been suspended. I would like to resolve this and regain access. JazakAllahu Khayran."
   )
 
   return (
@@ -18,8 +18,8 @@ export default function SuspendedPage() {
               <BookOpen className="w-7 h-7 text-emerald-900" />
             </div>
             <div className="text-left">
-              <div className="text-white font-display font-bold text-lg leading-tight">Daarul Furqon</div>
-              <div className="text-gold-400 text-sm">Qur'an Academy</div>
+              <div className="text-white font-display font-bold text-lg leading-tight">Dārul Furqōn</div>
+              <div className="text-gold-400 text-sm">Academy</div>
             </div>
           </Link>
         </div>

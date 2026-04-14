@@ -53,8 +53,8 @@ export default function LoginPage() {
               <BookOpen className="w-7 h-7 text-emerald-900" />
             </div>
             <div className="text-left">
-              <div className="text-white font-display font-bold text-lg leading-tight">Daarul Furqon</div>
-              <div className="text-gold-400 text-sm">Qur'an Academy</div>
+              <div className="text-white font-display font-bold text-lg leading-tight">Dārul Furqōn</div>
+              <div className="text-gold-400 text-sm">Academy</div>
             </div>
           </Link>
         </div>
