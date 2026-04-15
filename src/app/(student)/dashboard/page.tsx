@@ -79,7 +79,7 @@ export default function StudentDashboard() {
               As-salamu alaykum, {profile?.full_name?.split(' ')[0]}!
             </h1>
             <p className="text-emerald-300 text-sm mt-1">
-              {group ? `${group.name} · ${student?.program ? PROGRAM_LABELS[student.program] : ''}` : 'Welcome to Daarul Furqon'}
+              {group ? `${group.name} · ${student?.program ? PROGRAM_LABELS[student.program] : ''}` : 'Welcome to Dārul Furqōn'}
             </p>
           </div>
           {nextSession && (

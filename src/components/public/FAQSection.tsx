@@ -217,11 +217,11 @@ export default function FAQSection() {
             <FAQItem key={faq.q} question={faq.q} answer={faq.a} />
           ))}
         </div>
-
+  
         <div className="mt-10 text-center">
           <p className="text-gray-600 mb-4">Still have questions?</p>
           <a
-            href="https://wa.me/2348148168900?text=Assalamu%20Alaykum!%20I%20have%20a%20question%20about%20Daarul%20Furqon%20Qur'an%20Academy."
+            href="https://wa.me/2348148168900?text=Assalamu%20Alaykum!%20I%20have%20a%20question%20about%20Dārul%20Furqōn%20Academy."
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary inline-flex items-center gap-2"

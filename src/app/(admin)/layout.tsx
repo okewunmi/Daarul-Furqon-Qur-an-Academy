@@ -71,7 +71,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
             <BookOpen className="w-4 h-4 text-emerald-900" />
           </div>
           <div>
-            <div className="text-white font-display font-bold text-sm">Daarul Furqon</div>
+            <div className="text-white font-display font-bold text-sm">Dārul Furqōn</div>
             <div className="text-gold-400 text-xs">Admin Panel</div>
           </div>
         </Link>
