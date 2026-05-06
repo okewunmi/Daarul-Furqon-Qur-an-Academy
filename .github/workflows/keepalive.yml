@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: Ping keepalive endpoint
         run: |
-          STATUS=$(curl -s -o /dev/null -w "%{http_code}" https://YOUR_NETLIFY_URL.netlify.app/api/keepalive)
+          STATUS=$(curl -s -o /dev/null -w "%{http_code}" https://quran-academy-online.netlify.app/api/keepalive)
           echo "Response: $STATUS"
           if [ "$STATUS" != "200" ]; then
             echo "Ping failed with status $STATUS"
